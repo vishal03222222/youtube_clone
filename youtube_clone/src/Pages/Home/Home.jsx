@@ -3,7 +3,7 @@ import './Home.css'
 import Sidebar from '../../components/sidebar/sidebar'
 import Feed from '../../components/Feed/Feed'
 
-const Home = ({Sidebar}) => {
+const Home = ({sidebar}) => {
   const [category,setcategory]=useState(0);
   return (
     <>

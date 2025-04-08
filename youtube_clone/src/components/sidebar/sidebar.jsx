@@ -15,43 +15,43 @@ import tom from '../../assets/tom.png';
 import megan from '../../assets/megan.png';
 import cameron from '../../assets/cameron.png';
 
-const Sidebar = ({Sidebar}) => {
+const Sidebar = ({Sidebar,category,setcategory}) => {
   return (
     <div className={`Sidebar ${Sidebar?"":"small-sidebar"}`}>
   <div className='sortcut-links'>
-    <div className='side-link'>
+    <div className='side-link' onClick={()=>setcategory(0)}>
       <img src={home} alt='' />
       <p>Home</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===0?"active":""}`} onClick={()=>setcategory(17)}>
       <img src={sports} alt='' />
       <p>Sports</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===20?"active":""}`} onClick={()=>setcategory(20)}>
       <img src={game_icon} alt='' />
       <p>Gaming</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===2?"active":""}`} onClick={()=>setcategory(2)}>
       <img src={automobiles} alt='' />
       <p>Automobiles</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===24?"active":""}`} onClick={()=>setcategory(24)}>
       <img src={entertainment} alt='' />
       <p>Entertainment</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===28?"active":""}`} onClick={()=>setcategory(28)}>
       <img src={tech} alt='' />
       <p>Technology</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===10?"active":""}`}onClick={()=>setcategory(10)}>
       <img src={music} alt='' />
       <p>Music</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===22?"active":""}`}onClick={()=>setcategory(22)}>
       <img src={blogs} alt='' />
       <p>Blogs</p>
     </div>
-    <div className='side-link'>
+    <div className={`side-link ${category===25?"active":""}`} onClick={()=>setcategory(25)}>
       <img src={news} alt='' />
       <p>News</p>
     </div>
